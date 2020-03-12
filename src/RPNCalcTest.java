@@ -17,6 +17,18 @@ public class RPNCalcTest {
         double result = calc.calculate("100 5 -");
         assertEquals(-95, result, 0);
     }
+    @Test
+    public void testSimple3() {
+        RPNCalc calc = new RPNCalc();
+        double result = calc.calculate("100 5 *");
+        assertEquals(500, result, 0);
+    }
+    @Test
+    public void testSimple4() {
+        RPNCalc calc = new RPNCalc();
+        double result = calc.calculate("4 4 /");
+        assertEquals(1, result, 0);
+    }
 
 }
 
